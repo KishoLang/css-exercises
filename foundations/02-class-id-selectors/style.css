@@ -1,0 +1,24 @@
+.nr1 {
+    background-color: plum;
+}
+
+#nr2 {
+    font-size: 40px;
+    background-color: white;
+    color: blue;
+}
+
+.nr3 {
+    font-size: 20px;
+    background-color: plum;
+}
+
+#nr4 {
+    background-color: greenyellow;
+    font-size: 20px;
+}
+
+.nr5 {
+    background-color: plum;
+    font-size: 15px;
+}
