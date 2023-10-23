@@ -89,3 +89,78 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* SOLUTION */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+/* HEADER */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  grid-column: 1 / 3;
+}
+
+.logo {
+  justify-self: start;
+  align-self: center;
+  grid-column: 1 / 2;
+}
+
+.menu {
+  align-self: center;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menu ul li {
+  list-style-type: none;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5%;
+  grid-row: 2 / 4;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.side-content,
+.photo {
+  display: grid;
+  align-items: center;
+}
+
+/* NAV */
+.nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+/* ARTICLE */
+
+.article {
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.article .card {
+  height: 200px;
+}
+.footer {
+  grid-column: 1 / 3;
+}
